@@ -185,7 +185,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.modversion=$(LEAN_MOD_VERSION) \
     ro.lean.buildtype=$(LEAN_BUILD_TYPE)
 
-EXTENDED_POST_PROCESS_PROPS := vendor/lean/tools/lean_process_props.py
-
 # squisher
 SQUISHER_SCRIPT := vendor/lean/tools/squisher
