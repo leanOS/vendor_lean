@@ -161,11 +161,11 @@ PRODUCT_VERSION_MAJOR = 5.1.1
 PRODUCT_VERSION_MINOR = 0
 PRODUCT_VERSION_MAINTENANCE = 2
 ifdef LEAN_BUILD_EXTRA
-    LEAN_POSTFIX := -$(LEAN_BUILD_EXTRA)
+    LEAN_POSTFIX := $(LEAN_BUILD_EXTRA)
 endif
 ifndef LEAN_BUILD_TYPE
     LEAN_BUILD_TYPE := release
-    LEAN_POSTFIX := -$(shell date +"%Y%m%d")
+    LEAN_POSTFIX := $(shell date +"%Y%m%d")
 endif
 
 # Chromium Prebuilt
